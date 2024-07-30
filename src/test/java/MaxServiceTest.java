@@ -1,13 +1,14 @@
-package test.java;
-
+import main.java.MaxService;
+import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 
 public class MaxServiceTest {
 
     @Test
+
     public void ShouldFinMax() {
         MaxService maxService = new MaxService();
+
         int a = 5;
         int b = 3;
 
@@ -15,5 +16,16 @@ public class MaxServiceTest {
         int actual = maxService.max(a, b);
 
         Assertions.assertEquals(expected, actual);
+
+
     }
 }
+
+
+
+
+
+
+
+
+
